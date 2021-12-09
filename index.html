@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breaking Bad Facts - Facts</title>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div class="container-facts">
+        <header>
+            <img src="/img/logo-bb.png" onclick="window.location.href='index.html'" alt="Logo" />
+        </header>
+
+        <nav>
+            <a href="index.html" class="current">Facts</a>
+            <a href="characters.html">Characters</a>
+        </nav>
+
+        <main>
+            <div class="randomDeath">
+                <h1>Random Death Facts</h1>
+                <img id="deathImg" src="" alt="" />
+                <h2 id="deathName">Loading fact...</h2>
+                <h4 id="deathCause"></h4>
+                <br />
+                <h4 id="deathRespon"></h4>
+                <br />
+                <h4 id="deathSeason"></h4>
+                <h4 id="deathEpisode"></h4>
+                <h3 id="deathLastWords"></h3>
+                <button type="submit" onClick="refreshPage()">
+          Give me another fact!
+        </button>
+            </div>
+
+
+            <div class="counter">
+                <h2>Counter</h2>
+                <div class="loading"><img src="img/loading.gif" alt=""></div>
+                <table>
+                    <tr>
+                        <td id="counterChar">Characters: --</td>
+                        <td id="counterEpi">Episodes: --</td>
+                    </tr>
+                    <tr>
+                        <td id="counterQuotes">Quotes: --</td>
+                        <td id="counterDeaths">Deaths: --</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>
+            Special thanks to this
+            <a href="https://breakingbadapi.com/" target="_blank">Breaking Bad API</a>
+            <br /> StuntmanPackage &copy 2020
+        </p>
+    </footer>
+</body>
+
+</html>
